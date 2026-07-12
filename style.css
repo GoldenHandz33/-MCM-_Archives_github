@@ -178,3 +178,80 @@ body {
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+/* Tiered Monetization Tracks */
+.tier-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tier-item {
+    background-color: var(--card-bg);
+    border: 1px solid #2a3540;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2a3540;
+    padding-bottom: 10px;
+}
+
+.tier-title {
+    color: var(--text-light);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tier-price {
+    color: var(--gold);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.tier-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.tier-features li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tier-features li::before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.tier-button {
+    background-color: transparent;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tier-button:hover {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+}
